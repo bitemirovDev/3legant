@@ -1,11 +1,7 @@
 .collection__title {
-  margin-bottom: 48px;
-  margin-top: 48px;
+  margin: 48px 0;
 }
 
-.collection {
-  margin-bottom: 100px;
-}
 .collection__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

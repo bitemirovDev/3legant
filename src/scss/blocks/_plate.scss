@@ -14,6 +14,10 @@
       left: 48px;
       bottom: 48px;
     }
+
+    @include mediaBG() {
+      background: url('./../img/collection/01@2x.jpg');
+    }
   }
 
   &:nth-child(2) {
@@ -22,6 +26,10 @@
     .plate__content {
       left: 32px;
       bottom: 40px;
+    }
+
+    @include mediaBG() {
+      background: url('./../img/collection/02@2x.jpg');
     }
   }
 
@@ -32,6 +40,10 @@
     .plate__content {
       left: 32px;
       bottom: 40px;
+    }
+
+    @include mediaBG() {
+      background: url('./../img/collection/03@2x.jpg');
     }
   }
 }

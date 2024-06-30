@@ -1,4 +1,4 @@
-<!-- <div class="swiper-slide">
+<div class="swiper-slide">
   <article class="card">
     <div class="card__picture">
       <img
@@ -27,7 +27,9 @@
     </div>
     <div class="card__desc">
       <div class="card__rating">
-        
+        @@for(let i = 0; i < context.rating; i++) {
+        <img src="./img/icons/star.svg" alt="star" />
+        }
       </div>
       <div class="card__title">@@title</div>
       <div class="card__price">@@price</div>
@@ -35,4 +37,4 @@
 
     <a href="#!" class="card__link"></a>
   </article>
-</div> -->
+</div>

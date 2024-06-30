@@ -1,0 +1,19 @@
+.bestseller__title {
+  margin: 48px 0;
+}
+
+.bestseller__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  gap: 48px 24px;
+}
+
+.bestseller__cards .swiper-slide,
+.bestseller__cards .card {
+  width: auto;
+}
+
+.bestseller {
+  margin-bottom: 100px;
+}
