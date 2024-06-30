@@ -1,0 +1,25 @@
+.btn-fav {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in;
+
+  svg {
+    fill: #6c7275;
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover {
+    svg {
+      fill: #f44336;
+    }
+  }
+}

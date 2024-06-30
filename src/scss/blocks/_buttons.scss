@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  background: #141718;
+  border-radius: 8px;
+  color: #fff;
+  font-style: var(--font-main);
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--medium {
+    padding: 12px 56px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+  }
+
+  &--small {
+    padding: 9px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    background: #6c7275;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  &.active {
+    &::before {
+      background: #141718;
+    }
+
+    border-color: #141718;
+  }
+}
