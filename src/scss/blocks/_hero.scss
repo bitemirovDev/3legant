@@ -15,10 +15,11 @@
 
 .hero__container {
   height: 100%;
-  width: var(--container-width);
   display: flex;
-  justify-content: end;
   align-items: center;
+
+  padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+  padding-right: calc((100% - var(--container-width)) / 2);
 }
 
 .hero__content {
