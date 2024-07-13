@@ -60,9 +60,16 @@
       line-height: 22px;
       text-align: left;
 
+      opacity: 1;
+      transition: all 0.2s ease-in;
+
       a {
         color: rgba(254, 254, 254, 1);
         text-decoration: none;
+      }
+
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
@@ -83,6 +90,12 @@
     text-decoration: none;
     color: #fefefe;
     font-weight: 600;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 .footer__socials {
@@ -90,10 +103,16 @@
   gap: 24px;
 }
 .footer__link {
+  transition: all 0.2s ease-in;
   a {
     display: block;
     width: 24px;
     height: 24px;
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 

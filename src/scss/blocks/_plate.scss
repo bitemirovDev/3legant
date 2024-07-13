@@ -70,4 +70,10 @@
   gap: 4px;
   border-bottom: 1px solid #121212;
   max-width: max-content;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: translateX(10px);
+  }
 }
