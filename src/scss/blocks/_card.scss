@@ -3,7 +3,7 @@
   position: relative;
   gap: 12px;
   font-family: var(--font-main);
-  width: 262px;
+  width: inherit;
 
   &:hover {
     .card__button {
@@ -65,7 +65,10 @@
   font-weight: 600;
   line-height: 26px;
   color: #141718;
-  min-height: 52px;
+
+  white-space: nowrap; /* Запрещает перенос текста на новую строку */
+  overflow: hidden; /* Скрывает переполняющий текст */
+  text-overflow: ellipsis; /* Заменяет скрытый текст троеточием */
 }
 .card__price {
   font-size: 14px;

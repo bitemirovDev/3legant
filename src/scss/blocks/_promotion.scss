@@ -1,5 +1,6 @@
 .promotion {
   position: relative;
+  margin-top: 100px;
 
   &::before {
     content: '';
@@ -13,6 +14,19 @@
     background-position: center 25%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mobile {
+      height: 366px;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 366px;
+    margin-top: 40px;
   }
 }
 
@@ -24,17 +38,45 @@
 
   padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
   padding-right: calc((100% - var(--container-width)) / 2);
+
+  @include tablet {
+    padding-right: calc((100% - var(--container-width)) / 2);
+  }
+
+  @include mobile {
+    padding: 0 32px;
+  }
+
+  @include padd16 {
+    padding: 0 16px;
+  }
 }
 .promotion__content {
   padding: 101px 72px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
+
+  @include tablet {
+    padding: 50px 32px;
+  }
+
+  @include mobile {
+    padding: 28px 0;
+  }
 }
 .promotion__title {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  h2 {
+    @include mobile {
+      font-size: 34px;
+      line-height: 38px;
+    }
+  }
 }
 .promotion__tagline {
   font-size: 16px;
@@ -49,6 +91,11 @@
   font-weight: 400;
   line-height: 32px;
   text-align: left;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .promotion__timer {
   height: 118px;

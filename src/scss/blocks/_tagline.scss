@@ -1,31 +1,66 @@
 .tagline {
   height: 40px;
-  padding: 7px 15px;
+  padding: 8px 16px;
   background: #14171b;
   color: #fff;
   font-family: var(--font-main);
   position: relative;
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @include mobile {
+    height: 36px;
+    gap: 8px;
   }
 }
 
 .tagline__close {
   position: absolute;
+  width: 20px;
+  height: 20px;
   top: 10px;
   right: 16px;
   cursor: pointer;
+  z-index: 100;
+
+  svg {
+    fill: #343839;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover {
+    svg {
+      fill: #fff;
+    }
+  }
+
+  @include mobile {
+    position: static;
+    width: 16px;
+    height: 16px;
+    margin-left: 14px;
+    svg {
+      width: 16px;
+      height: 16px;
+      path {
+        fill: #fff;
+      }
+    }
+  }
 }
 
 .tagline__desc p {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .tagline__link {
@@ -41,5 +76,29 @@
   img {
     width: 18px;
     height: 18px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.tagline__icon {
+  @include mobile {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.tagline__link-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @include mobile {
+    display: block;
   }
 }

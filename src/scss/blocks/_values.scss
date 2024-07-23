@@ -5,12 +5,29 @@
   .container {
     display: flex;
     gap: 24px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  @include mobile {
+    padding: 32px 0;
   }
 }
 .values__el {
   width: 25%;
   background: #f3f5f7;
   padding: 48px 32px;
+
+  @include tablet {
+    width: calc(50% - 6px);
+  }
+
+  @include mobile {
+    padding: 32px 16px;
+  }
 }
 .values__img {
   margin-bottom: 16px;
@@ -21,6 +38,11 @@
   line-height: 28px;
   text-align: left;
   color: #23262f;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 .values__desc {
   font-size: 14px;

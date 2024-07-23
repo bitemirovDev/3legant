@@ -1,11 +1,21 @@
 .arrivals {
   padding: 48px 0;
+
+  @include mobile {
+    padding: 32px 0;
+  }
 }
 .arrivals__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+
+  @include mobile {
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .arrivals__title {
 }
@@ -14,7 +24,7 @@
 .container-right {
 }
 
-.arrivals__slider {
-  display: flex;
-  gap: 24px;
-}
+// .arrivals__slider {
+//   display: flex;
+//   gap: 24px;
+// }

@@ -12,6 +12,7 @@ const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+const gcmq = require('gulp-group-css-media-queries');
 
 gulp.task('clean:dev', function (done) {
   if (fs.existsSync('./build/')) {
@@ -52,6 +53,7 @@ gulp.task('sass:dev', function () {
     .pipe(sourceMaps.init())
     .pipe(sassGlob())
     .pipe(sass())
+    .pipe(gcmq())
     .pipe(sourceMaps.write())
     .pipe(gulp.dest('./build/css/'));
 });

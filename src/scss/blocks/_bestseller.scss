@@ -1,19 +1,33 @@
 .bestseller__title {
-  margin: 48px 0;
+  padding: 48px 0;
+
+  @include mobile {
+    text-align: center;
+    padding: 40px 0 16px;
+  }
 }
 
 .bestseller__cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
   gap: 48px 24px;
+
+  @include tablet {
+    // grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+    gap: 16px 8px;
+  }
 }
 
-.bestseller__cards .swiper-slide,
 .bestseller__cards .card {
   width: auto;
 }
 
-.bestseller {
-  margin-bottom: 100px;
+.bestseller__cards .card__title {
+  // @include mobile {
+  //   min-height: 78px;
+  // }
 }

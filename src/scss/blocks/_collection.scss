@@ -1,9 +1,26 @@
 .collection__title {
-  margin: 48px 0;
+  padding: 48px 0;
+
+  @include mobile {
+    text-align: center;
+    padding: 40px 0 16px 0;
+  }
 }
 
 .collection__grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 }

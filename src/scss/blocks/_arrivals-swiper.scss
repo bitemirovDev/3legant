@@ -23,7 +23,11 @@
 }
 
 .swiper-slide {
-  width: 262px;
+  width: auto;
+
+  // @include mobile {
+  //   width: inherit !important;
+  // }
 }
 
 .swiper-backface-hidden .swiper-slide {

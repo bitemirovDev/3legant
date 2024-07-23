@@ -30,6 +30,12 @@
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -0.4px;
+
+    @include mobile {
+      font-size: 34px;
+      line-height: 38px;
+      letter-spacing: -0.6px;
+    }
   }
   &-5 {
     font-size: 34px;

@@ -10,6 +10,9 @@
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .nav__list {
@@ -61,4 +64,20 @@
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+}
+
+.nav__btn-mobile {
+  display: none;
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+@include mobile {
+  .nav_btn-search,
+  .nav_btn-user,
+  .nav__list {
+    display: none;
+  }
 }
