@@ -1,7 +1,11 @@
-import timer from './modules/timer.js';
-import swiper from './modules/swiper.js';
 import tagline from './modules/tagline.js';
-
-timer();
 tagline();
+
+import swiper from './modules/swiper.js';
 swiper();
+
+import timer from './modules/timer.js';
+timer();
+
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();

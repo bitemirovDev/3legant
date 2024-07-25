@@ -20,6 +20,10 @@
     background-image: url('./../img/hero/bg_mobile.jpg');
     height: auto;
     padding-bottom: 380px;
+
+    @include retina() {
+      background-image: url('./../img/hero/bg_mobile@2x.jpg');
+    }
   }
 }
 
